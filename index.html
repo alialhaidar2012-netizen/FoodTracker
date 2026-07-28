@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <title>Foodtracker</title>
+</head>
+<body>
+  
+  <main class="container">
+  
+  <h1>Foodtracker</h1>
+  
+  <input id="photoInput" onchange="analyzePhoto()" type="file" accept="image/*" capture="environment" hidden>
+  
+  <button onclick="photoInput.click()">Foto aufnehmen oder hochladen</button>
+          
+          <div id="currentStatus"></div>
+        
+        <div id="currentMeal"></div>
+        
+
+  </main>
+  
+<script type="module" src="main.js"></script>
+</body>
+
+</html>
