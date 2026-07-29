@@ -15,6 +15,7 @@ async function analyzePhoto() {
         const imageUrl = await fileToImageURL(file);
         const prompt = `
             Analysiere dieses Essen oder Getränk und schätze die Nährwerte.
+            Erzeuge kein SmallTalk, keine Markdown-Formatierung und  keine Anleitung
             Antworte NUR mit einem JSON Objekt im folgenden Format:
 
             {
