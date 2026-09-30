@@ -51,7 +51,6 @@ async function analyzePhoto() {
     }
 }
 
-// ========== 3. GROQ-API-AUFRUF ==========
 async function callOpenAiVision(prompt, imageUrl) {
     const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
         method: "POST",
@@ -60,7 +59,7 @@ async function callOpenAiVision(prompt, imageUrl) {
             "Authorization": "Bearer " + GROQ_API_KEY
         },
         body: JSON.stringify({
-            model:  "qwen/qwen3.6-27b",
+            model:  "meta-llama/llama-4-scout-17b-16e-instruct",
             response_format: { type: "json_object" },
             max_tokens: 1000, 
             messages: [
