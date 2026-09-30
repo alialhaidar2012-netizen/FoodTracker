@@ -59,7 +59,7 @@ async function callOpenAiVision(prompt, imageUrl) {
             "Authorization": "Bearer " + GROQ_API_KEY
         },
         body: JSON.stringify({
-            model:  "meta-llama/llama-4-scout-17b-16e-instruct",
+            model:  "qwen/qwen3.8-27b",
             response_format: { type: "json_object" },
             max_tokens: 1000, 
             messages: [
