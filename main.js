@@ -52,7 +52,7 @@ async function analyzePhoto() {
 }
 
 async function callOpenAiVision(prompt, imageUrl) {
-    const response = await fetch("/API/analyze", {
+    const response = await fetch("/api/analyze", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
