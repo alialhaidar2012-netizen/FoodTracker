@@ -1,5 +1,3 @@
-import{GROQ_API_KEY} from './config.js';
-
 async function analyzePhoto() {
     const photoInput = document.getElementById('photoInput');
     const file = photoInput.files[0];
