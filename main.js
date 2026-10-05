@@ -52,11 +52,10 @@ async function analyzePhoto() {
 }
 
 async function callOpenAiVision(prompt, imageUrl) {
-    const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+    const response = await fetch("/API/analyze", {
         method: "POST",
         headers: {
-            "Content-Type": "application/json",
-            "Authorization": "Bearer " + GROQ_API_KEY
+            "Content-Type": "application/json"
         },
         body: JSON.stringify({
             model:  "qwen/qwen3.8-27b",
